@@ -1,0 +1,71 @@
+Checkliste für die Veröffentlichung im Microsoft Store
+1. Konto & Registrierung
+Entwicklerkonto im Microsoft Partner Center anlegen
+
+Einzelperson (kostenlos) oder Unternehmen (einmalig ca. 99 USD)
+
+Publisher‑ID wird dir dort zugewiesen (z. B. CN=DeinName)
+
+2. App‑Vorbereitung
+App‑Name reservieren im Partner Center
+
+App‑Paket vorbereiten:
+
+EXE oder MSIX (für Store zwingend MSIX oder MSIXBundle)
+
+AppxManifest.xml mit App‑Name, Publisher, Version, Icons, Beschreibung
+
+Icons in allen geforderten Größen (44x44, 150x150, 310x310 usw.)
+
+README / Lizenz / Beschreibung (optional, aber empfehlenswert)
+
+Screenshots (Pflicht, mindestens 1–3 in verschiedenen Auflösungen)
+
+3. Signierung
+MSIX‑Paket muss mit einem Zertifikat signiert sein, das zu deinem Publisher passt
+
+Zertifikat kannst du im Partner Center oder mit PowerShell erzeugen
+
+4. Store‑Listing
+Titel, Kurzbeschreibung, Langbeschreibung
+
+Screenshots, ggf. Videos
+
+Kategorie, Altersfreigabe
+
+Preis oder „kostenlos“
+
+5. Upload & Review
+Paket im Partner Center hochladen
+
+Microsoft prüft dein Paket (automatisiert + manuell)
+
+Nach Freigabe erscheint es im Store
+
+⚙️ Integration des MSIX Packaging Tools
+Das MSIX Packaging Tool ist ein offizielles Microsoft‑Programm (im Microsoft Store erhältlich).
+
+Es kann nicht automatisch installiert werden, da es über den Store verteilt wird und Adminrechte erfordert.
+
+Aber:
+
+Du kannst in deinem Tool einen Button „MSIX Packaging Tool starten“ einbauen, der prüft, ob es installiert ist, und es dann mit Parametern aufruft.
+
+Alternativ kannst du den PowerShell‑Weg nutzen:
+
+MakeAppx.exe (Teil des Windows SDK) → erstellt MSIX aus einem Ordner
+
+SignTool.exe → signiert das Paket mit deinem Zertifikat
+
+Diese Tools lassen sich voll automatisiert aus Python heraus ansteuern (subprocess).
+
+🔧 Empfehlung für dein Tool
+Dein Tool erzeugt bereits: EXE, Manifest, Icons, README, LICENSE, DESCRIPTION.
+
+Nächster Schritt:
+
+Ergänze einen „MSIX bauen“‑Button, der intern MakeAppx.exe und SignTool.exe aufruft.
+
+Damit kannst du den kompletten Build‑Prozess automatisieren, ohne dass der Nutzer das MSIX Packaging Tool manuell bedienen muss.
+
+Vorteil: Dein Tool bleibt self‑contained und du hast volle Kontrolle über den Build‑Prozess.

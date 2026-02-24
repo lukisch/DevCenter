@@ -1,0 +1,34 @@
+# DevCenter - Abhängigkeiten
+# Installieren mit: pip install -r requirements.txt
+
+# GUI Framework
+PyQt6>=6.4.0
+
+# Code Editor (optional, für erweiterte Features)
+# QScintilla>=2.13.0
+
+# Build-System
+pyinstaller>=5.0.0
+
+# Icon-Erstellung
+Pillow>=9.0.0
+
+# AI Integration
+anthropic>=0.18.0
+
+# Sichere API-Key Speicherung
+keyring>=23.0.0
+
+# Encoding-Reparatur
+ftfy>=6.1.0
+
+# Lizenz-Sammlung
+pip-licenses>=4.0.0
+
+# Datei-Überwachung
+watchdog>=3.0.0
+
+# Optionale Entwicklungs-Tools
+# pytest>=7.0.0
+# black>=23.0.0
+# mypy>=1.0.0
