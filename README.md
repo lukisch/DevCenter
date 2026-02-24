@@ -4,7 +4,7 @@
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
-![License](https://img.shields.io/badge/license-MIT-orange)
+![License](https://img.shields.io/badge/license-GPL%20v3-blue)
 
 ## 📋 Übersicht
 
@@ -275,7 +275,9 @@ python tests/test_core.py
 
 ## 📝 Lizenz
 
-MIT License
+GPL v3 - Siehe [LICENSE](LICENSE)
+
+Dieses Projekt verwendet PyQt6 (GPL).
 
 ## 🤝 Mitwirkende
 
