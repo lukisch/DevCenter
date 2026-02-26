@@ -61,4 +61,10 @@ Thumbs.db
 .DS_Store
 ehthumbs.db
 
+# ---- Standard-Patterns ----
+PLAN.txt
+_archive/
+_private/
+*.log
+
 # ---- Projektspezifisch (hier eigene Eintraege anfuegen) ----
