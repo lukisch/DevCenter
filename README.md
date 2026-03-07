@@ -1,215 +1,215 @@
-# 🚀 DevCenter
+# DevCenter
 
-**Python Development Suite** - Eine integrierte Entwicklungsumgebung für den kompletten Python-Entwicklungszyklus
+**Python Development Suite** - An integrated development environment for the complete Python development cycle
 
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
 ![Python](https://img.shields.io/badge/python-3.10+-green)
 ![License](https://img.shields.io/badge/license-GPL%20v3-blue)
 
-## 📋 Übersicht
+## Overview
 
-DevCenter ist eine All-in-One Desktop-IDE für Python-Projekte, die den kompletten Entwicklungszyklus unterstützt:
+DevCenter is an all-in-one desktop IDE for Python projects that supports the complete development cycle:
 
-**Code schreiben → Analysieren → Testen → Kompilieren → Veröffentlichen**
+**Write code -> Analyze -> Test -> Compile -> Publish**
 
-### 🔧 Fusionierte Tools
+### Fused Tools
 
-DevCenter vereint 11 spezialisierte Entwicklertools zu einer kohärenten Suite:
+DevCenter combines 11 specialized developer tools into one coherent suite:
 
-| Ursprungstool | Modul | Funktion |
-|---------------|-------|----------|
-| PythonBox V8 | Editor | Code-Editor mit Syntax-Highlighting, Auto-Indent |
-| MethodenAnalyser V3 | Analyzer | Statische Code-Analyse, Komplexitätsberechnung |
-| EncodingFixer | Analyzer | Encoding-Erkennung und -Reparatur |
-| UltimateKompilator V3.1 | Builder | Python → EXE Kompilierung via PyInstaller |
-| IcoBuilder | Builder | Bild → ICO Konvertierung |
-| ThirdPartyLicenses | Builder | Lizenz-Sammlung für Third-Party-Pakete |
-| Entwicklerschleife V3 | AI Assistant | Claude API Integration für Code-Generierung |
-| ProFiler V14 | FileManager | Datei-Indizierung und Volltext-Suche |
-| ProSync V3.1 | FileManager | Intelligente Backup-Synchronisation |
+| Original Tool | Module | Function |
+|---------------|--------|----------|
+| PythonBox V8 | Editor | Code editor with syntax highlighting, auto-indent |
+| MethodenAnalyser V3 | Analyzer | Static code analysis, complexity calculation |
+| EncodingFixer | Analyzer | Encoding detection and repair |
+| UltimateKompilator V3.1 | Builder | Python -> EXE compilation via PyInstaller |
+| IcoBuilder | Builder | Image -> ICO conversion |
+| ThirdPartyLicenses | Builder | License collection for third-party packages |
+| Entwicklerschleife V3 | AI Assistant | Claude API integration for code generation |
+| ProFiler V14 | FileManager | File indexing and full-text search |
+| ProSync V3.1 | FileManager | Intelligent backup synchronization |
 
-## 🛠️ Installation
+## Installation
 
-### Voraussetzungen
-- Python 3.10 oder höher
-- Windows 10/11 (primär), Linux/macOS (experimentell)
+### Prerequisites
+- Python 3.10 or higher
+- Windows 10/11 (primary), Linux/macOS (experimental)
 
-### Installation
+### Setup
 
 ```bash
-# Repository klonen oder Dateien kopieren
+# Clone the repository or copy files
 cd DevCenter
 
-# Abhängigkeiten installieren
+# Install dependencies
 pip install -r requirements.txt
 
-# Starten
+# Run
 python main.py
 ```
 
-### Abhängigkeiten
+### Dependencies
 
 ```
-PyQt6>=6.4.0          # GUI-Framework
-pyinstaller>=5.0      # EXE-Erstellung
-Pillow>=9.0           # Bildverarbeitung
-anthropic>=0.18.0     # Claude API
-chardet>=5.0          # Encoding-Erkennung
-keyring>=23.0         # Sichere Schlüsselspeicherung
+PyQt6>=6.4.0            # GUI framework
+pyinstaller>=5.0        # EXE creation
+Pillow>=9.0             # Image processing
+anthropic>=0.18.0       # Claude API
+chardet>=5.0            # Encoding detection
+keyring>=23.0           # Secure key storage
 ```
 
-## 📦 Projektstruktur
+## Project Structure
 
 ```
 DevCenter/
-├── main.py                      # Haupteinstiegspunkt
-├── requirements.txt             # Abhängigkeiten
-├── README.md                    # Diese Datei
-│
-├── src/
-│   ├── __init__.py
-│   │
-│   ├── core/                    # Kernkomponenten
-│   │   ├── project_manager.py   # Projektverwaltung
-│   │   ├── settings_manager.py  # Einstellungen (Singleton)
-│   │   └── event_bus.py         # Event-System (Pub/Sub)
-│   │
-│   ├── modules/
-│   │   ├── editor/              # Code-Editor
-│   │   │   └── code_editor.py   # Editor mit Syntax-Highlighting
-│   │   │
-│   │   ├── analyzer/            # Code-Analyse
-│   │   │   ├── method_analyzer.py  # AST-basierte Analyse
-│   │   │   └── encoding_fixer.py   # Encoding-Tools
-│   │   │
-│   │   ├── builder/             # Build-System
-│   │   │   ├── kompilator.py       # PyInstaller-Wrapper
-│   │   │   ├── icon_builder.py     # ICO-Konvertierung
-│   │   │   └── license_generator.py # Lizenz-Sammlung
-│   │   │
-│   │   ├── ai_assistant/        # AI-Integration
-│   │   │   └── ai_service.py    # Claude API + DevelopmentLoop
-│   │   │
-│   │   └── filemanager/         # Datei-Management
-│   │       ├── sync_manager.py  # Backup-Synchronisation
-│   │       └── profiler_bridge.py # Datei-Index
-│   │
-│   └── gui/
-│       ├── main_window.py       # Hauptfenster
-│       │
-│       ├── panels/              # UI-Panels
-│       │   ├── explorer_panel.py   # Datei-Navigator
-│       │   ├── output_panel.py     # Terminal-Ausgabe
-│       │   ├── problems_panel.py   # Fehler/Warnungen
-│       │   └── ai_panel.py         # AI-Chat-Interface
-│       │
-│       └── dialogs/             # Dialoge
-│           ├── new_project_dialog.py
-│           ├── settings_dialog.py
-│           └── build_dialog.py
-│
-├── resources/
-│   ├── themes/                  # UI-Themes
-│   └── icons/                   # Anwendungs-Icons
-│
-└── tests/
-    └── test_core.py             # Unit-Tests
++-- main.py                        # Main entry point
++-- requirements.txt               # Dependencies
++-- README.md                      # This file
+|
++-- src/
+|   +-- __init__.py
+|   |
+|   +-- core/                      # Core components
+|   |   +-- project_manager.py     # Project management
+|   |   +-- settings_manager.py    # Settings (singleton)
+|   |   +-- event_bus.py           # Event system (pub/sub)
+|   |
+|   +-- modules/
+|   |   +-- editor/                # Code editor
+|   |   |   +-- code_editor.py     # Editor with syntax highlighting
+|   |   |
+|   |   +-- analyzer/              # Code analysis
+|   |   |   +-- method_analyzer.py # AST-based analysis
+|   |   |   +-- encoding_fixer.py  # Encoding tools
+|   |   |
+|   |   +-- builder/               # Build system
+|   |   |   +-- kompilator.py      # PyInstaller wrapper
+|   |   |   +-- icon_builder.py    # ICO conversion
+|   |   |   +-- license_generator.py # License collection
+|   |   |
+|   |   +-- ai_assistant/          # AI integration
+|   |   |   +-- ai_service.py      # Claude API + development loop
+|   |   |
+|   |   +-- filemanager/           # File management
+|   |       +-- sync_manager.py    # Backup synchronization
+|   |       +-- profiler_bridge.py # File index
+|   |
+|   +-- gui/
+|       +-- main_window.py         # Main window
+|       |
+|       +-- panels/                # UI panels
+|       |   +-- explorer_panel.py  # File navigator
+|       |   +-- output_panel.py    # Terminal output
+|       |   +-- problems_panel.py  # Errors/warnings
+|       |   +-- ai_panel.py        # AI chat interface
+|       |
+|       +-- dialogs/               # Dialogs
+|           +-- new_project_dialog.py
+|           +-- settings_dialog.py
+|           +-- build_dialog.py
+|
++-- resources/
+|   +-- themes/                    # UI themes
+|   +-- icons/                     # Application icons
+|
++-- tests/
+    +-- test_core.py               # Unit tests
 ```
 
-## ⚡ Features
+## Features
 
 ### Editor
-- ✅ Python Syntax-Highlighting (Keywords, Strings, Kommentare, Decorators)
-- ✅ Zeilennummern mit aktueller Zeilen-Hervorhebung
-- ✅ Auto-Indent (erhält Einrückung, fügt nach `:` hinzu)
-- ✅ Smart Backspace (springt zu Tab-Stops)
-- ✅ Kommentar-Toggle (Ctrl+/)
-- ✅ Mehrere Editor-Tabs
-- ✅ Drag & Drop Dateien
+- Python syntax highlighting (keywords, strings, comments, decorators)
+- Line numbers with current line highlighting
+- Auto-indent (preserves indentation, adds after `:`)
+- Smart backspace (jumps to tab stops)
+- Comment toggle (Ctrl+/)
+- Multiple editor tabs
+- Drag & drop files
 
-### Analyse
-- ✅ Klassen- und Methoden-Erkennung
-- ✅ Import-Analyse (genutzt/ungenutzt)
-- ✅ Zyklomatische Komplexitäts-Berechnung
-- ✅ Mutable Default Argument Warnung
-- ✅ Bare Except Warnung
-- ✅ TODO/FIXME Erkennung
-- ✅ Encoding-Prüfung und -Reparatur
+### Analysis
+- Class and method detection
+- Import analysis (used/unused)
+- Cyclomatic complexity calculation
+- Mutable default argument warning
+- Bare except warning
+- TODO/FIXME detection
+- Encoding check and repair
 
 ### Build
-- ✅ One-Click EXE-Erstellung
-- ✅ One-File und One-Directory Modi
-- ✅ Icon-Konvertierung (PNG/JPG → ICO)
-- ✅ Hidden Imports Verwaltung
-- ✅ Zusätzliche Dateien einbinden
-- ✅ UPX-Komprimierung (optional)
-- ✅ Third-Party-Lizenzen sammeln
+- One-click EXE creation
+- One-file and one-directory modes
+- Icon conversion (PNG/JPG -> ICO)
+- Hidden imports management
+- Include additional files
+- UPX compression (optional)
+- Third-party license collection
 
-### AI-Assistent
-- ✅ Claude API Integration
-- ✅ Code-Generierung aus Beschreibungen
-- ✅ Code-Review und Verbesserungsvorschläge
-- ✅ Code-Erklärungen
-- ✅ Fehler-Behebungshilfe
-- ✅ Entwicklerschleife (Plan → Code → Review)
+### AI Assistant
+- Claude API integration
+- Code generation from descriptions
+- Code review and improvement suggestions
+- Code explanations
+- Error fixing assistance
+- Development loop (plan -> code -> review)
 
-### Datei-Management
-- ✅ Projekt-Explorer mit Kontextmenü
-- ✅ SQLite-basierter Datei-Index
-- ✅ Volltext-Suche im Code
-- ✅ Duplikat-Erkennung (Hash-basiert)
-- ✅ Automatische Backups mit WAL-Checkpoint
-- ✅ Musterbasierte Ausschlüsse
+### File Management
+- Project explorer with context menu
+- SQLite-based file index
+- Full-text search in code
+- Duplicate detection (hash-based)
+- Automatic backups with WAL checkpoint
+- Pattern-based exclusions
 
-## 🎨 Benutzeroberfläche
+## User Interface
 
 ```
-┌─────────────────────────────────────────────────────────────────┐
-│  Datei  Bearbeiten  Ansicht  Ausführen  Analyse  Hilfe          │
-├─────────────────────────────────────────────────────────────────┤
-│  📁 Neu  📂 Öffnen  💾 Speichern  │  ▶ Ausführen  🔨 Build  │ 🤖 │
-├────────────┬────────────────────────────────┬───────────────────┤
-│ 📁 EXPLORER│  main.py  │  utils.py  │ ●app │   🤖 AI Assistent │
-│            │─────────────────────────────────│                   │
-│ 📁 src     │  1 │ # -*- coding: utf-8 -*-    │   [Chat-Verlauf]  │
-│   📄 main  │  2 │ """                        │                   │
-│   📄 utils │  3 │ DevCenter - Main           │   ─────────────   │
-│   📁 gui   │  4 │ """                        │                   │
-│            │  5 │                            │   [Input-Feld]    │
-│            │  6 │ import sys                 │   [✨] [🔍] [📖]  │
-│            ├────────────────────────────────┤                   │
-│            │  🖥️ Terminal  │  ⚠️ Probleme   │                   │
-│            │  $ python main.py              │                   │
-│            │  Hello, World!                 │                   │
-│            │  ✓ Prozess beendet (Code: 0)   │                   │
-├────────────┴────────────────────────────────┴───────────────────┤
-│  📁 DevCenter                              Ln 5, Col 1  │ UTF-8 │
-└─────────────────────────────────────────────────────────────────┘
++------------------------------------------------------------------+
+|  File  Edit  View  Run  Analysis  Help                           |
++------------------------------------------------------------------+
+|  New  Open  Save  |  Run  Build  |  AI  |
++------------+-------------------------------------+-------------------+
+| EXPLORER   |  main.py  |  utils.py  | app       |   AI Assistant    |
+|            |--------------------------------------|                   |
+|  src       |  1 | # -*- coding: utf-8 -*-        |   [Chat History]  |
+|    main    |  2 | """                             |                   |
+|    utils   |  3 | DevCenter - Main                |   ---------------  |
+|    gui     |  4 | """                             |                   |
+|            |  5 |                                 |   [Input Field]    |
+|            |  6 | import sys                      |   [Send] [Search] [Attach]  |
+|            |--------------------------------------|                   |
+|            |  Terminal  |  Problems   |           |                   |
+|            |  $ python main.py                    |                   |
+|            |  Hello, World!                       |                   |
+|            |  Process finished (Code: 0)          |                   |
++------------+------------------------------------+-------------------+
+|  DevCenter                              Ln 5, Col 1  | UTF-8 |
++------------------------------------------------------------------+
 ```
 
-## ⌨️ Tastenkürzel
+## Keyboard Shortcuts
 
-| Kürzel | Aktion |
-|--------|--------|
-| Ctrl+N | Neue Datei |
-| Ctrl+O | Datei öffnen |
-| Ctrl+S | Speichern |
-| Ctrl+Shift+N | Neues Projekt |
-| Ctrl+Shift+O | Projekt öffnen |
-| Ctrl+Shift+S | Speichern unter |
-| F5 | Ausführen |
-| F6 | Build erstellen |
-| Ctrl+/ | Kommentar umschalten |
-| Ctrl+Shift+A | AI-Assistent umschalten |
-| Ctrl+, | Einstellungen |
+| Shortcut | Action |
+|----------|--------|
+| Ctrl+N | New file |
+| Ctrl+O | Open file |
+| Ctrl+S | Save |
+| Ctrl+Shift+N | New project |
+| Ctrl+Shift+O | Open project |
+| Ctrl+Shift+S | Save as |
+| F5 | Run |
+| F6 | Build |
+| Ctrl+/ | Toggle comment |
+| Ctrl+Shift+A | Toggle AI assistant |
+| Ctrl+, | Settings |
 
-## 🔧 Konfiguration
+## Configuration
 
-Einstellungen werden gespeichert in:
+Settings are stored in:
 - **Windows:** `%APPDATA%\DevCenter\settings.json`
 - **Linux/macOS:** `~/.config/DevCenter/settings.json`
 
-### Wichtige Einstellungen
+### Key Settings
 
 ```json
 {
@@ -238,52 +238,56 @@ Einstellungen werden gespeichert in:
 }
 ```
 
-## 🧪 Tests
+## Tests
 
 ```bash
-# Alle Tests ausführen
+# Run all tests
 python -m pytest tests/ -v
 
-# Oder mit unittest
+# Or with unittest
 python tests/test_core.py
 ```
 
-## 📊 Statistiken
+## Statistics
 
-| Metrik | Wert |
-|--------|------|
-| Python-Dateien | 26 |
-| Code-Zeilen | ~7.500 |
-| Module | 5 (Core, Editor, Analyzer, Builder, FileManager, AI) |
-| GUI-Panels | 4 |
-| GUI-Dialoge | 3 |
-| Unit-Tests | 20+ |
+| Metric | Value |
+|--------|-------|
+| Python files | 26 |
+| Lines of code | ~7,500 |
+| Modules | 5 (Core, Editor, Analyzer, Builder, FileManager, AI) |
+| GUI panels | 4 |
+| GUI dialogs | 3 |
+| Unit tests | 20+ |
 
-## 🗺️ Roadmap
+## Roadmap
 
 ### Version 1.1
-- [ ] Code-Folding
-- [ ] Erweiterte Suchen-Ersetzen
-- [ ] Git-Integration
-- [ ] Debugger-Unterstützung
+- [ ] Code folding
+- [ ] Extended search & replace
+- [ ] Git integration
+- [ ] Debugger support
 
 ### Version 1.2
-- [ ] Plugin-System
-- [ ] Weitere Themes
-- [ ] MSIX-Packaging
-- [ ] Auto-Update
+- [ ] Plugin system
+- [ ] Additional themes
+- [ ] MSIX packaging
+- [ ] Auto-update
 
-## 📝 Lizenz
+## License
 
-GPL v3 - Siehe [LICENSE](LICENSE)
+GPL v3 - See [LICENSE](LICENSE)
 
-Dieses Projekt verwendet PyQt6 (GPL).
+This project uses PyQt6 (GPL).
 
-## 🤝 Mitwirkende
+## Contributors
 
-Basiert auf dem Fusionskonzept der Entwickler-Suite.
-Erstellt mit PyQt6 und Claude AI.
+Based on the fusion concept of the developer suite.
+Created with PyQt6 and Claude AI.
 
 ---
 
-**DevCenter v1.0.0** | Januar 2026
+**DevCenter v1.0.0** | January 2026
+
+---
+
+Deutsche Version: [README.de.md](README.de.md)
