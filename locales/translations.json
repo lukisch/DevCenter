@@ -1,0 +1,110 @@
+{
+  "0 Fehler": {
+    "de": "0 Fehler",
+    "en": "0 Errors"
+  },
+  "Abbrechen": {
+    "de": "Abbrechen",
+    "en": "Cancel"
+  },
+  "Ausgabeordner öffnen": {
+    "de": "Ausgabeordner öffnen",
+    "en": "Open Output Folder"
+  },
+  "Build läuft...": {
+    "de": "Build läuft...",
+    "en": "Build running..."
+  },
+  "Build-Einstellungen": {
+    "de": "Build-Einstellungen",
+    "en": "Build Settings"
+  },
+  "Datei +": {
+    "de": "Datei +",
+    "en": "File +"
+  },
+  "Datei hinzufügen...": {
+    "de": "Datei hinzufügen...",
+    "en": "Add File..."
+  },
+  "Datei laden": {
+    "de": "Datei laden",
+    "en": "Load File"
+  },
+  "Einstellungen": {
+    "de": "Einstellungen",
+    "en": "Settings"
+  },
+  "Einstellungen speichern": {
+    "de": "Einstellungen speichern",
+    "en": "Save Settings"
+  },
+  "Filter:": {
+    "de": "Filter:",
+    "en": "Filter:"
+  },
+  "Lizenz (Text/Dateien):": {
+    "de": "Lizenz (Text/Dateien):",
+    "en": "License (Text/Files):"
+  },
+  "Muster für Dateien/Ordner die nicht synchronisiert werden": {
+    "de": "Muster für Dateien/Ordner die nicht synchronisiert werden",
+    "en": "Patterns for files/folders that will not be synced"
+  },
+  "Python Umgebung (für Builds)": {
+    "de": "Python Umgebung (für Builds)",
+    "en": "Python Environment (for Builds)"
+  },
+  "README (Text oder Datei):": {
+    "de": "README (Text oder Datei):",
+    "en": "README (Text or File):"
+  },
+  "Speichern": {
+    "de": "Speichern",
+    "en": "Save"
+  },
+  "WACK-Test starten": {
+    "de": "WACK-Test starten",
+    "en": "Start WACK Test"
+  },
+  "Wichtig, wenn dieses Tool als EXE läuft. Muss 'pip install pyinstaller' haben.": {
+    "de": "Wichtig, wenn dieses Tool als EXE läuft. Muss 'pip install pyinstaller' haben.",
+    "en": "Important when this tool runs as EXE. Must have 'pip install pyinstaller'."
+  },
+  "Wählen": {
+    "de": "Wählen",
+    "en": "Select"
+  },
+  "Zeigt erstellte Dateien": {
+    "de": "Zeigt erstellte Dateien",
+    "en": "Shows created files"
+  },
+  "Zurücksetzen": {
+    "de": "Zurücksetzen",
+    "en": "Reset"
+  },
+  "Zusätzliche Aktionen": {
+    "de": "Zusätzliche Aktionen",
+    "en": "Additional Actions"
+  },
+  "▶ Ausführen": {
+    "de": "▶ Ausführen",
+    "en": "▶ Execute"
+  },
+  "📂 Projekt öffnen": {
+    "de": "📂 Projekt öffnen",
+    "en": "📂 Open Project"
+  },
+  "📄 Datei öffnen": {
+    "de": "📄 Datei öffnen",
+    "en": "📄 Open File"
+  },
+  "📖 Erklären": {
+    "de": "📖 Erklären",
+    "en": "📖 Explain"
+  },
+  "🔨 Build starten": {
+    "de": "🔨 Build starten",
+    "en": "🔨 Start Build"
+  }
+}

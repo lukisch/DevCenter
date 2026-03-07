@@ -287,3 +287,30 @@ Erstellt mit PyQt6 und Claude AI.
 ---
 
 **DevCenter v1.0.0** | Januar 2026
+
+---
+
+## English
+
+An all-in-one Python IDE with code editor, analyzer, builder, AI assistant, and file management.
+
+### Features
+
+- Integrated code editor
+- Static code analysis
+- Build and packaging tools
+- AI assistant integration
+- Project file management
+
+### Installation
+
+```bash
+git clone https://github.com/lukisch/REL-PUB_DevCenter_SUITE.git
+cd REL-PUB_DevCenter_SUITE
+pip install -r requirements.txt
+python "main.py"
+```
+
+### License
+
+See [LICENSE](LICENSE) for details.
