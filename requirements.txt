@@ -20,6 +20,7 @@ anthropic>=0.18.0
 keyring>=23.0.0
 
 # Encoding-Reparatur
+chardet>=5.0.0
 ftfy>=6.1.0
 
 # Lizenz-Sammlung
